@@ -1,22 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goutaman V | Java Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>CSE 2026 | Java | SQL</p>
 
-  <h2>About Me</h2>
-  <p>I am learning Java backend development.</p>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Student Management System (Java + JDBC)</li>
-  </ul>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
 
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Available for Opportunities</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="line-reveal">Goutaman</span>
+        <span class="line-reveal delay-1">V.</span>
+      </h1>
+      <p class="hero-role line-reveal delay-2">Java Developer</p>
+      <p class="hero-sub line-reveal delay-3">
+        <span class="tag">CSE 2026</span>
+        <span class="divider">·</span>
+        <span class="tag">Oracle SQL Certified</span>
+        <span class="divider">·</span>
+        <span class="tag">Chennai</span>
+      </p>
+      <div class="hero-cta line-reveal delay-4">
+        <a href="#projects" class="btn-primary">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <a href="resume.pdf" class="btn-ghost" target="_blank">Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="section-label">001 — About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Building things<br/><em>that matter.</em></h2>
+        <p>Computer Science undergraduate based in Chennai, focused on backend development. I enjoy building structured, database-driven applications and continuously improving my problem-solving skills.</p>
+        <p>When I'm not writing Java, I'm deep in SQL queries, optimising joins, or exploring how systems communicate at scale.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-block">
+          <span class="stat-number">01</span>
+          <span class="stat-label">Project Shipped</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Languages</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">1x</span>
+          <span class="stat-label">Oracle Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="section-label">002 — Skills</div>
+    <h2>What I work with</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">{ }</div>
+        <h3>Languages</h3>
+        <ul>
+          <li>Java</li><li>SQL</li><li>JavaScript</li><li>PHP</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">&lt;/&gt;</div>
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML</li><li>CSS</li><li>React Native</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⌥</div>
+        <h3>Tools</h3>
+        <ul>
+          <li>Git</li><li>GitHub</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">∞</div>
+        <h3>Concepts</h3>
+        <ul>
+          <li>OOP</li><li>Joins & Indexing</li><li>Basic DSA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="section-label">003 — Projects</div>
+    <h2>Featured work</h2>
+    <div class="project-feature">
+      <div class="project-number">01</div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="tech-tag">React Native</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+        <h3>TalentApp</h3>
+        <p class="project-tagline">Recruitment Workflow Platform</p>
+        <p class="project-desc">A structured digital recruitment system connecting job seekers and recruiters. Manages job listings, candidate profiles, and communication workflows — built with a full stack mobile-first approach.</p>
+        <a href="https://github.com/Vgoutaman/PDD-TalentApp" target="_blank" class="project-link">
+          <span>Explore on GitHub</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <div class="project-visual">
+        <div class="visual-blob"></div>
+        <div class="visual-code">
+          <pre><code><span class="kw">public class</span> <span class="cl">TalentApp</span> {
+  <span class="kw">private</span> Database db;
+
+  <span class="kw">public</span> List <span class="fn">match</span>() {
+    <span class="kw">return</span> db.<span class="fn">query</span>(
+      <span class="str">"SELECT * FROM
+       candidates
+       WHERE score > ?"</span>
+    );
+  }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-label">004 — Contact</div>
+    <div class="contact-inner">
+      <h2>Let's build<br/><em>something great.</em></h2>
+      <a href="mailto:gautamvaradh@gmail.com" class="email-link">
+        gautamvaradh@gmail.com
+        <div class="email-underline"></div>
+      </a>
+      <div class="social-links">
+        <a href="https://github.com/Vgoutaman" target="_blank" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/goutaman-v-14371723b/" target="_blank" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Goutaman V</span>
+    <span class="footer-mono">Designed & Built with intent.</span>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    const trail = document.getElementById('cursorTrail');
+    let mx = 0, my = 0, tx = 0, ty = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+    });
+
+    (function animateTrail() {
+      tx += (mx - tx) * 0.12;
+      ty += (my - ty) * 0.12;
+      trail.style.left = tx + 'px';
+      trail.style.top = ty + 'px';
+      requestAnimationFrame(animateTrail);
+    })();
+
+    document.querySelectorAll('a, .skill-card').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('expanded'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('expanded'));
+    });
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) setTimeout(() => e.target.classList.add('revealed'), i * 90);
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.skill-card, .about-grid, .project-feature, .contact-inner, .stat-block').forEach(el => obs.observe(el));
+  </script>
 </body>
 </html>
